@@ -1,0 +1,5 @@
+Displays the Unique IP Addresses and their occurances $  grep '^[0-9]\|^:' access.txt | awk '{ print $1 }'| sort | uniq -c 
+Displays the Number of unique IP Addresses $ grep '^[0-9]\|^:' access.txt | awk '{ print $1 }'| sort | uniq | wc -l
+Displays the Unique Occurances of the IP Addresses $ awk '{ print $9 }' access.txt | grep "^[2-5]" | sort | uniq -c | sort -n
+
+
